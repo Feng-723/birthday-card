@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日挑戰</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>答對所有問題，解鎖生日密碼！</h2>
+
+    <div class="question">
+        <p>1. 我們第一次約會的地方？</p>
+        <button onclick="checkAnswer(1, '蔡大頭')">蔡大頭</button>
+        <button onclick="checkAnswer(1, '火雞大王')">火雞大王</button>
+        <button onclick="checkAnswer(1, '老牌火鍋')">老牌火鍋</button>
+        <p id="q1-result" class="hidden">正確！你的第一個數字是 0</p>
+    </div>
+
+    <div class="question">
+        <p>2. 我最喜歡妳叫我的暱稱？</p>
+        <button onclick="checkAnswer(2, '豬豬')">豬豬</button>
+        <button onclick="checkAnswer(2, '笨蛋')">笨蛋</button>
+        <button onclick="checkAnswer(2, '臭寶')">臭寶</button>
+        <p id="q2-result" class="hidden">正確！你的第二個數字是 7</p>
+    </div>
+
+    <div class="question">
+        <p>3. 我最喜歡妳穿什麼？</p>
+        <button onclick="checkAnswer(3, '毛衣')">毛衣</button>
+        <button onclick="checkAnswer(3, '小背心')">小背心</button>
+        <button onclick="checkAnswer(3, '大學T')">大學T</button>
+        <p id="q3-result" class="hidden">正確！你的第三個數字是 2</p>
+    </div>
+
+    <div class="question">
+        <p>4. 我們在一起的月份？</p>
+        <button onclick="checkAnswer(4, '6月')">6月</button>
+        <button onclick="checkAnswer(4, '7月')">7月</button>
+        <button onclick="checkAnswer(4, '8月')">8月</button>
+        <p id="q4-result" class="hidden">正確！你的第四個數字是 3</p>
+    </div>
+
+     <button id="next-btn" class="hidden" onclick="goToPasswordPage()">前往密碼輸入頁面</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
