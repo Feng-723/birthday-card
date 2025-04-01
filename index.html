@@ -69,19 +69,32 @@
             padding: 50px;
         }
         .container {
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(255, 182, 193, 0.8);
             padding: 20px;
             border-radius: 15px;
             display: inline-block;
         }
-        input, button {
-            font-size: 20px;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
+        input {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 2px solid #ff69b4; /* 粉紅色邊框 */
+    color: #ff69b4; /* 輸入文字顏色 */
+}
+
+button {
+    background: #ff69b4; /* 粉紅色 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
         button:hover {
-            background: #ff9900;
+            background: #ff4081;
         }
     </style>
 </head>
